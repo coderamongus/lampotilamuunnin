@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" conent="width=device-width, initial-scale=1.0">
+    <title>Javascript Lämpötilamuunnin</title>
+</head>
+<style>
+    body {
+        background-image: url("mustakuva2.png");
+    }
+    h1{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    ul {
+        list-style-type: decimal;
+    }
+    li{
+        color:white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    form{
+        color:white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    button{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    p{
+      font-family: Arial, Helvetica, sans-serif;
+      color:white;  
+    }
+</style>
+<body>
+
+    <center>
+        
+        <h1>Javascript Lämpötilamuunnin</h1>
+        <select name="muunnin" id="select">
+            <option value="cTOf">Celsius -> Fahrenheit</option>
+            <option value="fTOc">Fahrenheit -> Celsius</option>
+            <option value="cTOk">Celsius -> Kelvin</option>
+            <option value="kTOc">Kelvin -> Celsius</option>
+        </select>
+        <h1>Syötä lämpötila:</h1>
+
+        <p>
+            <input id="inputFahrenheit" type="number" placeholder="Muutettava lämpötila" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+        </p>
+        <p>Vastaus: <span id="outputFahrenheit"></span></p>  
+    </center>
+
+    
+<script src="lampotilamuunnin.js"></script>
+</body>
+</html>
